@@ -1,7 +1,7 @@
 require(File.join('gamesave', 'filesystem'))
 
 module Gamesave
-  module Steam
+  module SteamFiles
     USER_DATA_PATH = File.join('Library', 'Application Support', 'Steam', 'userdata')
     
     def user_data_path(user_id = nil)

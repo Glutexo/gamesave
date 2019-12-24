@@ -1,5 +1,9 @@
 #!/usr/bin/env ruby
 
-require(File.join('gamesave', 'steam'))
+require(File.join('gamesave', 'steam_id'))
 
-puts(Gamesave::Steam::user_data_path)
+steam_id = ARGV[0].to_i
+puts("Steam ID: #{steam_id}")
+
+account_id = Gamesave::SteamId::account_id(steam_id)
+puts("Account ID: #{account_id}")
