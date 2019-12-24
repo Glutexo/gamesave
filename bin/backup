@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require(File.join('gamesave', 'steam'))
+
+puts(Gamesave::Steam::user_data_path)
